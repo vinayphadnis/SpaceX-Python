@@ -2,20 +2,21 @@ from setuptools import setup, find_packages
 import sys, os
 
 here = os.path.abspath(os.path.dirname(__file__))
-README = open(os.path.join(here, 'README.rst')).read()
+README = open(os.path.join(here, 'README-pypi.rst')).read()
 NEWS = open(os.path.join(here, 'NEWS.txt')).read()
 
 
-version = '1'
+version = '4.01'
 
 install_requires = [
     # List your project dependencies here.
     # For more details, see:
     # http://packages.python.org/distribute/setuptools.html#declaring-dependencies
+    'requests'	
 ]
 
 
-setup(name='spacex-python',
+setup(name='spacexPython',
     version=version,
     description="Simple Python wrapper for the SpaceX API",
     long_description=README + '\n\n' + NEWS,
@@ -33,6 +34,6 @@ setup(name='spacex-python',
     install_requires=install_requires,
     entry_points={
         'console_scripts':
-            ['spacex-python=spacexpython:main']
+            ['spacex-python=spacexpython']
     }
 )

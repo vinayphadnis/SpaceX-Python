@@ -1,23 +1,31 @@
-This file requires editing
-==========================
+Simple and Easy API Wrapper for `r-spacex/SpaceX-API`_!
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
-Note to the author: Please add something informative to this README *before*
-releasing your software, as `a little documentation goes a long way`_.  Both
-README.rst (this file) and NEWS.txt (release notes) will be included in your
-package metadata which gets displayed in the PyPI page for your project.
+Documentation
+-------------
 
-You can take a look at the README.txt of other projects, such as repoze.bfg
-(http://bfg.repoze.org/trac/browser/trunk/README.txt) for some ideas.
+This API Wrapper aims to provide a simple and easy way to use the
+`SpaceX-API`_ in Python projects. See the `Wiki`_ for full wrapper
+documentation.
 
-.. _`a little documentation goes a long way`: http://www.martinaspeli.net/articles/a-little-documentation-goes-a-long-way
+Installation
+------------
 
-Credits
--------
+To install via ``pip`` use: ``pip install spacexPython``
 
-- `Distribute`_
-- `Buildout`_
-- `modern-package-template`_
+Basic Usage
+-----------
 
-.. _Buildout: http://www.buildout.org/
-.. _Distribute: http://pypi.python.org/pypi/distribute
-.. _`modern-package-template`: http://pypi.python.org/pypi/modern-package-template
+The usage of the wrapper is very easy. It does not require any
+initialisation. Just import and start coding:
+
+.. code:: python
+
+   import spacexpython
+
+   rocket_data = spacexpython.rockets.falconHeavy()
+   print(rocket_data)
+
+.. _r-spacex/SpaceX-API: https://github.com/r-spacex/SpaceX-API
+.. _SpaceX-API: https://github.com/r-spacex/SpaceX-API
+.. _Wiki: https://github.com/phadnisvinay30/SpaceX-Python/wiki

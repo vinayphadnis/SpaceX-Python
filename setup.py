@@ -6,7 +6,7 @@ README = open(os.path.join(here, 'README-pypi.rst')).read()
 NEWS = open(os.path.join(here, 'NEWS.txt')).read()
 
 
-version = '4.01'
+version = '1.0.1'
 
 install_requires = [
     # List your project dependencies here.
@@ -26,7 +26,7 @@ setup(name='spacexPython',
     keywords='wrapper api spacex',
     author='Vinay Phadnis',
     author_email='phadnisvinay30@gmail.com',
-    url='',
+    url='https://github.com/phadnisvinay30/SpaceX-Python',
     license='MIT',
     packages=find_packages('src'),
     package_dir = {'': 'src'},include_package_data=True,

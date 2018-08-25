@@ -6,7 +6,7 @@ README = open(os.path.join(here, 'README-pypi.rst')).read()
 NEWS = open(os.path.join(here, 'NEWS.txt')).read()
 
 
-version = '1.0.1'
+version = '1.0.3'
 
 install_requires = [
     # List your project dependencies here.

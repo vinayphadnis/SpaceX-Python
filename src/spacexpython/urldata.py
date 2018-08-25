@@ -18,3 +18,7 @@ class Domain:
     falcon_9 = main_rockets + "/falcon9"
     falcon_heavy = main_rockets + "/falconheavy"
     big_falcon_rocket = main_rockets + "/bfr"
+
+    # capsules
+    main_capsules = "capsules"
+    

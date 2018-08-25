@@ -4,30 +4,25 @@ import urldata
 
 def rockets():
     requestUrl = urldata.Domain.main + urldata.Domain.main_rockets
-    url_response = requests.get(url=str(requestUrl))
-    response = url_response.json()
-    return response
+    return makeRequest(requestUrl)
 
 def falcon1():
     requestUrl = urldata.Domain.main + urldata.Domain.falcon_1
-    url_response = requests.get(url=str(requestUrl))
-    response = url_response.json()
-    return response
+    return makeRequest(requestUrl)
 
 def falcon9():
     requestUrl = urldata.Domain.main + urldata.Domain.falcon_9
-    url_response = requests.get(url=str(requestUrl))
-    response = url_response.json()
-    return response
+    return makeRequest(requestUrl)
 
 def falconHeavy():
     requestUrl = urldata.Domain.main + urldata.Domain.falcon_heavy
-    url_response = requests.get(url=str(requestUrl))
-    response = url_response.json()
-    return response
+    return makeRequest(requestUrl)
 
 def bfr():
     requestUrl = urldata.Domain.main + urldata.Domain.big_falcon_rocket
+    return makeRequest(requestUrl)
+
+def makeRequest(requestUrl):
     url_response = requests.get(url=str(requestUrl))
     response = url_response.json()
     return response

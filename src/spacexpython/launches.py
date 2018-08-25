@@ -5,24 +5,21 @@ import urldata
 
 def launches():
     requestUrl = urldata.Domain.main + urldata.Domain.main_launches
-    url_response = requests.get(url=str(requestUrl))
-    response = url_response.json()
-    return response
+    return makeRequest(requestUrl)
 
 def latest():
     requestUrl = urldata.Domain.main + urldata.Domain.latest_launches
-    url_response = requests.get(url=str(requestUrl))
-    response = url_response.json()
-    return response
+    return makeRequest(requestUrl)
 
 def next():
     requestUrl = urldata.Domain.main + urldata.Domain.next_launches
-    url_response = requests.get(url=str(requestUrl))
-    response = url_response.json()
-    return response
+    return makeRequest(requestUrl)
 
 def upcoming():
     requestUrl = urldata.Domain.main + urldata.Domain.upcoming_launches
+    return makeRequest(requestUrl)
+
+def makeRequest(requestUrl):
     url_response = requests.get(url=str(requestUrl))
     response = url_response.json()
     return response

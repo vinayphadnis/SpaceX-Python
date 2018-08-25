@@ -23,6 +23,6 @@ def bfr():
     return makeRequest(requestUrl)
 
 def makeRequest(requestUrl):
-    url_response = requests.get(url=str(requestUrl))
+    url_response = requests.get(url=str(requestUrl), timeout=1)
     response = url_response.json()
     return response
